@@ -41,6 +41,15 @@
       border-radius: 12px;
     }
 
+    .earth {
+      animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
     .content {
       background-color: white;
       padding: 20px;
@@ -79,8 +88,12 @@
 
   <div class="container">
     <div class="image-section">
-      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Bumi" />
-      <img src="https://cdn-icons-png.flaticon.com/512/679/679611.png" alt="Tong Sampah" />
+      <!-- Gambar bumi berputar -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg" 
+           alt="Bumi" class="earth" />
+
+      <!-- Gambar tong sampah realistis dari file user -->
+      <img src="6ffcb891-948d-4ffe-a28a-161651ec58e5.png" alt="Tong Sampah Realistis" />
     </div>
 
     <div class="content">
